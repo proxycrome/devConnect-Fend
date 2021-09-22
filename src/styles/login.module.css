@@ -1,0 +1,103 @@
+* {font-family: 'Rubik', sans-serif;}
+
+.section {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  background: linear-gradient(315deg, #eddea4 60%, #f7a072 60%);
+  background-image: url("../images/LoginBaackground.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100vw;
+  height: 100vh;
+  color: #0d1317;
+  font-size: larger;
+}
+
+.form {
+  margin: 50px auto;
+  padding: 10px;
+  border: 1px solid rgba(54, 18, 7, 0.1);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 26px 42px rgba(0, 0, 0, 0.1);
+  width: 500px;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  border-radius: 15px;
+  color: #494850;
+  font-weight: bold;
+}
+
+.formTitle {
+  font-weight: bold;
+  font-size: 25px;
+  color: white
+}
+
+.formFooter{
+    color: white;
+}
+
+.formInput {
+  height: 30px;
+  width: 290px;
+  border: 2px solid #f2a792;
+  background: #f9f7f3;
+  outline: none;
+  padding: 10px;
+  color: #0d1317;
+  border-radius: 5px;
+  transition: border-color 200ms ease-in;
+}
+
+.formInput:hover {
+  border-color: #e4572e;
+}
+.formInput:focus {
+  border-color: #5a1e0c;
+}
+input::placeholder {
+  color: #0d1317;
+}
+
+.formButton {
+  margin-top: 30px;
+  width: 100%;
+  display: block;
+  margin-left: auto;
+  padding: 10px 90px;
+  border-radius: 5px;
+  background-color: #e4572e;
+  color: #ffffff;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  transition: background-color 200ms ease-in;
+}
+
+.formButton:hover {
+  background-color: #5a1e0c;
+  color: #dee8d5;
+}
+
+.form p {
+  font-size: 20px;
+}
+
+.form h4 a {
+  color: #e4572e;
+  text-decoration: none;
+}
+
+input[type="password"] {
+  margin-top: 10px;
+}
+
+input[type="radio"]:checked {
+  color: #494850;
+}
+
+input[type="radio"] {
+  background: #0d1317;
+}

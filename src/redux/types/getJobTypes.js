@@ -1,0 +1,3 @@
+export const GET_JOB_START = "GET_JOB_START";
+export const GET_JOB_SUCCESS = "GET_JOB_SUCCESS";
+export const GET_JOB_FAILURE = "GET_JOB_FAILURE";

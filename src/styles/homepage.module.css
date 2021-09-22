@@ -1,0 +1,45 @@
+/* Hero/Banner styles */
+.banner {
+    min-height: 90vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 75vh;
+    color: #fff;
+}
+
+.heroContent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+.banner .heroContent h1 {
+    font-size: 60px;
+}
+
+.banner .heroContent p {
+    font-size: 20px;
+    text-align: center;
+}
+
+.banner .heroContent a {
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #ffff;
+    padding: 7px;
+    border: 2px solid #ffff;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+/* Media queries */
+
+  

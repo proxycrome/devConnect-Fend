@@ -1,23 +1,29 @@
-import logo from './logo.svg';
-import './App.css';
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import Homepage from "./components/Homepage";
+import DevSignupComponent from "./components/DevSignupComponent";
+import DevLoginComponent from "./components/DevLoginComponent";
+import EmpSignupComponent from "./components/EmpSignupComponent";
+import EmpLoginComponent from "./components/EmpLoginComponent";
+import PostJobComponent from "./components/PostJobComponent";
+import GetJobsComponent from "./components/GetJobsComponent";
+import JobProfile from "./components/JobProfile";
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Router>
+        <Switch>
+          <Route exact path="/" component={Homepage} />
+          <Route exact path="/register" component={DevSignupComponent} />
+          <Route exact path="/login" component={DevLoginComponent} /> 
+          <Route exact path="/employer/register" component={EmpSignupComponent} /> 
+          <Route exact path="/employer/login" component={EmpLoginComponent} /> 
+          <Route exact path="/users/employer/s/jobs" component={PostJobComponent} /> 
+          <Route exact path="/users/jobs" component={GetJobsComponent} /> 
+          <Route exact path="/jobprofile/:id" component={JobProfile} /> 
+        </Switch>
+      </Router>
     </div>
   );
 }
