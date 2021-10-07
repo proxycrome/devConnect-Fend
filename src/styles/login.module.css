@@ -3,8 +3,8 @@
 .section {
   padding-top: 50px;
   padding-bottom: 50px;
-  background: linear-gradient(315deg, #eddea4 60%, #f7a072 60%);
-  background-image: url("../images/LoginBaackground.png");
+  background: linear-gradient(315deg, #eddea4 60%, hsl(21, 89%, 71%) 60%);
+  background-image: url("../images/signupWallpaper.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -100,4 +100,15 @@ input[type="radio"]:checked {
 
 input[type="radio"] {
   background: #0d1317;
+}
+
+.applySuccess {
+  background-image: url("../images/signupWallpaper.jpg");
+  margin-top: -22px;
+  color: white;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

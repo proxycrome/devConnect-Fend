@@ -23,6 +23,6 @@ const getJobStart = () => ({
       localStorage.setItem("userList", JSON.stringify(response.data));
       dispatch(getJobSuccess(response.data.data));
     } catch (err) {
-      dispatch(getJobFailure(err));
+      dispatch(getJobFailure(err.response));
     }
   };

@@ -7,6 +7,8 @@ import EmpLoginComponent from "./components/EmpLoginComponent";
 import PostJobComponent from "./components/PostJobComponent";
 import GetJobsComponent from "./components/GetJobsComponent";
 import JobProfile from "./components/JobProfile";
+import ApplyComponent from "./components/ApplyComponent";
+import ApplySuccess from "./components/ApplySuccess";
 
 
 function App() {
@@ -22,6 +24,8 @@ function App() {
           <Route exact path="/users/employer/s/jobs" component={PostJobComponent} /> 
           <Route exact path="/users/jobs" component={GetJobsComponent} /> 
           <Route exact path="/jobprofile/:id" component={JobProfile} /> 
+          <Route exact path="/apply/:id" component={ApplyComponent} />
+          <Route exact path="/success" component={ApplySuccess} />
         </Switch>
       </Router>
     </div>

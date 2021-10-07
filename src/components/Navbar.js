@@ -65,9 +65,11 @@ const NavBar = () => {
                   </li>
                   {token ? (
                     <>
-                      <Link to="/" onClick={logOut}>
-                        Log out
-                      </Link>
+                      <li>
+                        <Link to="/" onClick={logOut}>
+                          Log out
+                        </Link>
+                      </li>  
                     </>
                   ) : (
                     <>

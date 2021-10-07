@@ -1,11 +1,11 @@
 export const DevMenuItems = [
     {
-        title: "Signup Developer",
+        title: "Developer Signup",
         path: "/register",
         cName: "dropdown-link"
     },
     {
-        title: "Login Developer",
+        title: "Developer Login",
         path: "/login",
         cName: "dropdown-link"
     },

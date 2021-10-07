@@ -4,16 +4,26 @@ import { MdKeyboardBackspace } from "react-icons/md";
 import NavBar from "./Navbar";
 import Footer from "./Footer";
 import { useParams, useHistory } from "react-router-dom";
+import { getToken } from '../utility/common';
 
 
 const JobProfile = () => {
     const history = useHistory();
+    const token = getToken()
 
     const { id } = useParams();
 
     const storageData = localStorage.getItem("userList");
     const userData = JSON.parse(storageData);
     const [userState] = userData.data.filter((user) => user._id === id);
+
+    const handleClick = () => {
+      if(!token){
+        alert('Please Login or signup as a developer');
+        return;
+      } 
+        history.push(`/apply/${id}`)  
+    }
 
 
     return (
@@ -32,11 +42,12 @@ const JobProfile = () => {
             </div>
             <div className={style.bottomDiv}>
               <div className={style.infoUser}>
+                <p style={{fontSize: "1.5rem"}}>{userState.companyName}</p>
                 <h2>{`Job Title: ${userState.job_title}`}</h2>
                 <h2>{`Job Type: ${userState.job_type}`}</h2>
                 <h3>{`Salary: N${userState.salary}`}</h3>
                 <h3>{`Closing Date: ${userState.closing_date}`}</h3>
-                <button>Apply Now</button>
+                <button className={style.submitBtn} onClick={handleClick}>Apply Now</button>
               </div>
             </div>
           </div>

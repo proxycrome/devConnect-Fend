@@ -56,6 +56,7 @@ const GetJobsComponent = () => {
                   <UserCard
                     key={data._id}
                     id={data._id}
+                    companyName={data.companyName}
                     job_title={data.job_title}
                     job_type={data.job_type}
                     onClick={handleClick}

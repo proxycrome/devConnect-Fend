@@ -112,3 +112,12 @@
   cursor: pointer;
   color: black;
 }
+
+.submitBtn{
+  background-color: blue;
+  width: 100px;
+  height: 30px;
+  color: white;
+  border-radius: 10px;
+  cursor: pointer;
+}
