@@ -32,7 +32,6 @@ const ApplyComponent = () => {
 
     const {applyJob} = useSelector(state => state);
 
-    let appError;
 
     useMemo(() => {
         if(applyJob.isAuthenticated) {
