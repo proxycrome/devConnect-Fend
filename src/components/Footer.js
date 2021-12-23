@@ -12,9 +12,9 @@ const Footer = () => {
             <div className={footStyles.footerLinks}>
                 <a href='/about'>About</a>
                 <span>Contact us :</span>
-                <a href='#'><FiMail /></a>
-                <a href='#'><FaFacebookF /></a>
-                <a href='#'><FaLinkedinIn /></a>
+                <a href='https://www.google.com'><FiMail /></a>
+                <a href='https://www.facebook.com'><FaFacebookF /></a>
+                <a href='https://www.linkedIn.com'><FaLinkedinIn /></a>
             </div>
         </div>
     )
