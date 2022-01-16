@@ -20,6 +20,7 @@ const JobProfile = () => {
     const handleClick = () => {
       if(!token){
         alert('Please Login or signup as a developer');
+        history.push('/login');
         return;
       } 
         history.push(`/apply/${id}`)  
